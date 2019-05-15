@@ -1,12 +1,12 @@
 #######################################
-# Syntax Coloring DFRobot_PH
+# Syntax Coloring DFRobot_ESP_PH
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-DFRobot_PH	KEYWORD1
+DFRobot_ESP_PH	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
