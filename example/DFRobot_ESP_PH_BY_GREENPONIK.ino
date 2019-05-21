@@ -26,7 +26,6 @@
  */
 
 #include "DFRobot_ESP_PH.h"
-#include <EEPROM.h>
 
 DFRobot_ESP_PH ph;
 #define ESPADC 4096.0   //the esp Analog Digital Convertion value
