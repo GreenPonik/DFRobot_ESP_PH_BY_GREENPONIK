@@ -21,11 +21,12 @@
  * ##################################################
  * ##################################################
  * 
- * version  V1.0
- * date  2019-05
+ * version  V1.1
+ * date  2019-06
  */
 
 #include "DFRobot_ESP_PH.h"
+#include "EEPROM.h"
 
 DFRobot_ESP_PH ph;
 #define ESPADC 4096.0   //the esp Analog Digital Convertion value
@@ -36,6 +37,7 @@ float voltage, phValue, temperature = 25;
 void setup()
 {
 	Serial.begin(115200);
+	EEPROM.begin(32);//needed to permit storage of calibration value in eeprom
 	ph.begin();
 }
 

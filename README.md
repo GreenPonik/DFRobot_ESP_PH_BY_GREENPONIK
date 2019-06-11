@@ -25,6 +25,7 @@ float voltage, phValue, temperature = 25;
 void setup()
 {
 	Serial.begin(115200);
+	EEPROM.begin(32);//needed to permit storage of calibration value in eeprom
 	ph.begin();
 }
 
@@ -63,6 +64,7 @@ float readTemperature()
 MCU                | Work Well | Work Wrong | Untested  | Remarks
 ------------------ | :----------: | :----------: | :---------: | -----
 ESP32  |      √       |             |            | 
+ESP8266  |             |        √     |            | 
 
 ## Credits
 
