@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/GreenPonik/DFRobot_ESP_PH_BY_GREENPONIK.git"
   },
-  "version": "1.1",
+  "version": "1.1.1",
   "license": "LGPL-2.1",
   "frameworks": "arduino",
   "platforms": "espressif32"

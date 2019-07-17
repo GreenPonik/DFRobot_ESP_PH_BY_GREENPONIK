@@ -41,7 +41,7 @@ void DFRobot_ESP_PH::begin()
 {
     //check if calibration values (neutral and acid) are stored in eeprom
     this->_neutralVoltage = EEPROM.readFloat(PHVALUEADDR); //load the neutral (pH = 7.0)voltage of the pH board from the EEPROM
-    if (this->_neutralVoltage == float())
+    if (this->_neutralVoltage == float() || isnan(this->_neutralVoltage))
     {
         this->_neutralVoltage = 1500.0; // new EEPROM, write typical voltage
         EEPROM.writeFloat(PHVALUEADDR, this->_neutralVoltage);
@@ -49,7 +49,7 @@ void DFRobot_ESP_PH::begin()
     }
 
     this->_acidVoltage = EEPROM.readFloat(PHVALUEADDR + sizeof(float)); //load the acid (pH = 4.0) voltage of the pH board from the EEPROM
-    if (this->_acidVoltage == float())
+    if (this->_acidVoltage == float() || isnan(this->_acidVoltage))
     {
         this->_acidVoltage = 2032.44; // new EEPROM, write typical voltage
         EEPROM.writeFloat(PHVALUEADDR + sizeof(float), this->_acidVoltage);
@@ -209,7 +209,7 @@ void DFRobot_ESP_PH::phCalibration(byte mode)
         }
         break;
 
-    case 3://store calibration value in eeprom
+    case 3: //store calibration value in eeprom
         if (enterCalibrationFlag)
         {
             Serial.println();
