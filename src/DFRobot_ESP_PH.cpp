@@ -70,7 +70,9 @@ float DFRobot_ESP_PH::readPH(float voltage, float temperature)
     // Serial.print(", intercept:");
     // Serial.println(intercept);
     this->_phValue = slope * (voltage - 1500.0) / 3.0 + intercept; //y = k*x + b
-    return _phValue;
+    Serial.print("[readPH]... phValue ");
+    Serial.println(this->_phValue);
+    return this->_phValue;
 }
 
 void DFRobot_ESP_PH::calibration(float voltage, float temperature, char *cmd)
