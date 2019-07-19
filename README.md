@@ -71,3 +71,13 @@ ESP8266  |             |        √     |            |
 Written by Mickael Lehoux from [@greenponik](https://www.greenponik.com/)
 
 >Based on written by Jiawei Zhang(Welcome to our [website](https://www.dfrobot.com/))
+
+# Tutorial here
+[![Tutorial here](http://img.youtube.com/vi/EqFw561pO5k/0.jpg)](https://www.youtube.com/watch?v=EqFw561pO5k "PH Meter with ESP32 and DFRobot PH module (SEN0161-V2)")
+
+### Suscribe on our newsletter here: 
+en: http://bit.ly/2NuaKbN
+
+fr: http://bit.ly/2XNf61R
+
+https://www.greenponik.com
