@@ -81,3 +81,6 @@ en: http://bit.ly/2NuaKbN
 fr: http://bit.ly/2XNf61R
 
 https://www.greenponik.com
+
+## support us
+[become a patreon](https://www.patreon.com/bePatron?u=32614023)
